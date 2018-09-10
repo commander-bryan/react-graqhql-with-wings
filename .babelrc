@@ -1,0 +1,32 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "browsers": [
+                        "last 2 versions",
+                        "ie >= 11"
+                    ]
+                }
+            }
+        ],
+        "react"
+    ],
+    "plugins": [
+        "transform-object-rest-spread",
+        "syntax-dynamic-import"
+    ],
+    "env": {
+        "production": {
+            "plugins": [
+                "transform-react-remove-prop-types"
+            ]
+        },
+        "test": {
+            "plugins": [
+                "babel-plugin-dynamic-import-node"
+            ]
+        }
+    }
+}

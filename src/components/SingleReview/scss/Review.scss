@@ -1,0 +1,46 @@
+.single-review {
+    color: #538fbd;
+    background-color: #f2f8ff;
+    width: 20%;
+    height: 450px;
+    overflow-y: scroll;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 0.5%;
+
+    &__heading {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    &__about {
+        &-description:after,
+        &-address:after,
+        &-district:after {
+            content:"\000A";
+            white-space: pre;
+        }
+    }
+
+    &__ratings {
+        &-sauce,
+        &-price,
+        &-quality {
+            span:after {
+                content:"\000A";
+                white-space: pre;
+            }
+            span {
+                margin-left: 10%;
+            }
+        }
+
+        &-sauce:after,
+        &-price:after,
+        &-quality:after {
+            content:"\000A";
+            white-space: pre;
+        }
+    }
+}

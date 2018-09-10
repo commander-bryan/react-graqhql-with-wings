@@ -8,7 +8,7 @@ This app has been created to gather a list of reviews from a graphql backend and
 
 The app is built using React 16 and styled with plain CSS. Yarn/NPM are used for dependency management and for running & testing the app.
 
-`create-react-app` has been used to create the starter template.
+`create-react-app` has been used to create the starter template and to run the tests. Webpack is used to deploy the dev server.
 
 ## Quickstart
 
