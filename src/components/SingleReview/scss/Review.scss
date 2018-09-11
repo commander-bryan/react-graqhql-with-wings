@@ -1,17 +1,31 @@
 .single-review {
     color: #538fbd;
     background-color: #f2f8ff;
-    width: 20%;
-    height: 450px;
+    width: 80%;
     overflow-y: scroll;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    margin-bottom: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 0.5%;
+    text-align: center;
+
+    &__controls {
+        text-align: left;
+        &-save,
+        &-edit {
+            background-color: transparent;
+            border-color: transparent;
+            color: #a9c4f9;
+        }
+        &-save:hover,
+        &-edit:hover {
+            cursor: pointer;
+            color: #538fbd;
+        }
+    }
 
     &__heading {
-        text-align: center;
         font-size: 3rem;
+        margin-top: 0;
     }
 
     &__about {
@@ -30,9 +44,6 @@
             span:after {
                 content:"\000A";
                 white-space: pre;
-            }
-            span {
-                margin-left: 10%;
             }
         }
 
