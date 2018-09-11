@@ -7,30 +7,10 @@ import GraphQLStateHandler from '../../components/GraphQLStateHandler/GraphQLSta
 export const reviewsQuery = gql`
     query WingsReviews {
         WingsReviews {
-            wings {
-                sauce {
-                    description
-                    givenStars
-                    totalStars
-                }
-                price {
-                    description
-                    givenStars
-                    totalStars
-                }
-                quality {
-                    description
-                    givenStars
-                    totalStars
-                }
-            }
+            id
             location {
                 name
-                description
-                address
-                district
             }
-            id
             __typename
         }
     }
